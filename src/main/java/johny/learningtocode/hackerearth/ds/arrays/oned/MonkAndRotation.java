@@ -1,4 +1,4 @@
-package johny.learningtocode.hackerearth.arrays.oned;
+package johny.learningtocode.hackerearth.ds.arrays.oned;
 
 import java.io.BufferedReader;
 import java.io.IOException;
