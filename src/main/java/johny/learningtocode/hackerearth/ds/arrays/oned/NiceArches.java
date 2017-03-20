@@ -24,6 +24,9 @@ public class NiceArches {
     }
 
     static boolean isBubbly(String word) {
+        if (word.length() % 2 != 0) {
+            return false;
+        }
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < word.length(); i++) {
             char currentCharacter = word.charAt(i);
