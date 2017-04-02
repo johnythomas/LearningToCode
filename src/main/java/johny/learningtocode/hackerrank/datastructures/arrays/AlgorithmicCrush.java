@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * Problem url: https://www.hackerrank.com/challenges/crush
+ */
 public class AlgorithmicCrush {
 
     public static void main(String[] args) throws IOException {
