@@ -14,11 +14,11 @@ public class BirthdayCakeCandles {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         reader.readLine();
         StringTokenizer heightTokens = new StringTokenizer(reader.readLine(), " ");
-        System.out.println(getNumberOfCandlesBlowed(heightTokens));
+        System.out.println(getNumberOfCandlesBlown(heightTokens));
         reader.close();
     }
 
-    static int getNumberOfCandlesBlowed(StringTokenizer heightTokens) {
+    static int getNumberOfCandlesBlown(StringTokenizer heightTokens) {
         int freq = 0;
         int largestHeight = -1;
         while (heightTokens.hasMoreTokens()) {
