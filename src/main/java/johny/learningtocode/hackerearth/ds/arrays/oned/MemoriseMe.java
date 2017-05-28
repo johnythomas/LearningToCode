@@ -19,8 +19,7 @@ public class MemoriseMe {
         Map<Integer, Integer> numberFrequency = findNumberFrequency(array, n);
         int q = Integer.parseInt(reader.readLine());
         while (q-- > 0) {
-            int frequency = executeQuery(Integer.parseInt(reader.readLine()), numberFrequency);
-            result.append(frequency == 0 ? "NOT PRESENT" : frequency).append("\n");
+            result.append(executeQuery(Integer.parseInt(reader.readLine()), numberFrequency)).append("\n");
         }
         System.out.println(result);
     }
@@ -35,7 +34,7 @@ public class MemoriseMe {
         return numberFrequency;
     }
 
-    static int executeQuery(int b, Map<Integer, Integer> numberFrequency) {
-        return numberFrequency.get(b) == null ? 0 : numberFrequency.get(b);
+    static String executeQuery(int b, Map<Integer, Integer> numberFrequency) {
+        return numberFrequency.get(b) == null ? "NOT PRESENT" : String.valueOf(numberFrequency.get(b));
     }
 }
