@@ -13,7 +13,7 @@ public class MemoriseMeTest {
     public void testMemorizeMe() {
         String[] array = "1 2 3 4".split("\\s");
         Map<Integer, Integer> numberFrequency = MemoriseMe.findNumberFrequency(array, 4);
-        numberFrequency.values().stream().forEach(val -> assertEquals(1, val.intValue()));
+        numberFrequency.values().forEach(val -> assertEquals(1, val.intValue()));
         Stream.of(array).forEach(ele -> assertEquals("1", MemoriseMe.executeQuery(Integer.parseInt(ele), numberFrequency)));
         assertEquals("NOT PRESENT", MemoriseMe.executeQuery(7, numberFrequency));
 
