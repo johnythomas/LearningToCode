@@ -36,4 +36,32 @@ public class PostOrderTraversal {
         }
         System.out.println(resultBuilder);
     }
+
+    void postOrderUsingOneStack(Node root) {
+        StringBuilder result = new StringBuilder();
+        Stack<Node> stack = new Stack<>();
+        do {
+
+            while (root != null) {
+                if (root.right != null) {
+                    stack.push(root.right);
+                }
+                stack.push(root);
+                root = root.left;
+            }
+
+            root = stack.pop();
+
+            if (root.right != null && !stack.isEmpty() && root.right == stack.peek()) {
+                stack.pop();
+                stack.push(root);
+                root = root.right;
+            } else {
+                result.append(root.data).append(" ");
+                root = null;
+            }
+
+        } while (!stack.isEmpty());
+        System.out.println(result);
+    }
 }
