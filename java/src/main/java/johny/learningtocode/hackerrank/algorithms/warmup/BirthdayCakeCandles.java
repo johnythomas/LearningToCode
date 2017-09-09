@@ -1,4 +1,4 @@
-package johny.learningtocode.hackerrank.algorithms;
+package johny.learningtocode.hackerrank.algorithms.warmup;
 
 import java.io.BufferedReader;
 import java.io.IOException;
