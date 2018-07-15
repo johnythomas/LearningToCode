@@ -1,4 +1,4 @@
-package johny.learningtocode.hackerearth.math.combinatorics.inclusionexclusion;
+package johny.learningtocode.hackerearth;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
